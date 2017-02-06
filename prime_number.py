@@ -11,11 +11,9 @@ def prime_number(number):
             lst = [2,3,5]
         else:
             return "Not prime number in range"
-        print lst
+        return lst
     else:
-        print "invalid input"
-
-prime_number(100)
+        return "invalid input"
 
             
         
