@@ -1,14 +1,10 @@
-def prime_number(n):
+def prime_number(number):
 
+    lst = []
+    for i in range(2, number):
+        if i%2!=0 and i%3!=0 and i%5!=0:
+            lst.append(i)
+    print lst
 
-    myList = []
-    if isinstance(n, int):
-        for i in range(n):
-            if n%i==0:
-                return "not prime"
-            else:
-                myLst.append(i)
-                print myList
-
-prime_number(6)
-                
+            
+        
