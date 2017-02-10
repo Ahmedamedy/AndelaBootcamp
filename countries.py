@@ -4,8 +4,8 @@ def get_data(get_url, isocode):
 	try:
 		c = requests.get(get_url +str(isocode))
 		return c
-	except ValueError as e:
-		print("Incorect Ip address")
+	except Exception e:
+		print("ISO code")
 		raise(e)
 	return "* Nothing to show *"
 
